@@ -493,6 +493,8 @@ void MainWindow::processing_backup_log(bool flag_auto)
 	if (flag_auto == false) {
 		return;
 	}
+// Compress algorithm devloper choice.
+/*
 	string string_backup_filename = "./Backup\\";
 	string string_metadata_filename = "./Backup\\";
 	string_backup_filename.append(log_date_info.get_DBdate());
@@ -528,6 +530,7 @@ void MainWindow::processing_backup_log(bool flag_auto)
 	_write_metadata(string_metadata_filename.c_str());
 	_release_resource();
 	library_compress.unload();
+*/
 	return;
 }
 
@@ -616,6 +619,7 @@ void MainWindow::clicked_tool_user_rule()
 
 void MainWindow::clicked_tool_compress()
 {
+/* Compress Algorithm user choice.
 	QString string_repo_path;
 	QString string_compress_path, string_name_compress, string_name_metadata;
 	QByteArray array_compress_path, array_name_compress, array_name_metadata;
@@ -659,10 +663,13 @@ void MainWindow::clicked_tool_compress()
 		_release_resource();
 		library_compress.unload();
 	}
+*/
+	return;
 }
 
 void MainWindow::clicked_tool_decompress()
 {
+/* Compress Algorithm user choice.
 	QString string_repo_path;
 	QString string_decompress_path, string_name_decompress, string_name_metadata;
 	QByteArray array_decompress_path, array_name_decompress, array_name_metadata;
@@ -704,6 +711,8 @@ void MainWindow::clicked_tool_decompress()
 		_release_resource();
 		library_compress.unload();
 	}
+*/
+	return;
 }
 
 void MainWindow::clicked_tool_encryption_option()
